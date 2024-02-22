@@ -1,4 +1,5 @@
 <h2>Exercícios de JavaScript</h2>
+<h3>Lista para praticar Javascript</h3>
 
 <ol>
   <li>Escreva um programa que imprima os números de 1 a 100. Mas, para múltiplos de 3, imprima "Fizz" em vez do número e para os múltiplos de 5, imprima "Buzz". Para números que são múltiplos de ambos 3 e 5, imprima "FizzBuzz".</li>
@@ -34,7 +35,7 @@
   <li>Comprimento da Maior Palavra: Escreva uma função que receba uma lista de palavras e retorne o comprimento da maior palavra.</li>
 
   <li>Fatorial: Escreva uma função que receba um número e retorne o fatorial desse número.</li>
-  
+
   <li>Máximo Divisor Comum (MDC): Escreva uma função que receba dois números como parâmetros e retorne o máximo divisor comum (MDC) entre eles.</li>
 
 </ol>
