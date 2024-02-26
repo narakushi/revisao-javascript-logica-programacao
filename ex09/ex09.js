@@ -6,14 +6,6 @@ function mostraMat(matriz){
     }
 }
 
-function ordenaLinha(matriz){
-    for(let i = 0; i < matriz.length; i++){
-        for(let j = 0; j < matriz.length; j++){
-            
-        }
-    }
-}
-
 function ordenaColuna(matriz) {
     let aux;
 
@@ -28,15 +20,34 @@ function ordenaColuna(matriz) {
             }
         }
     }
-
-    ordenaLinha(matriz);
-
     return matriz;
 }
 
-const matriz = Array(2);
 
-matriz[0] = [9, 7];
+function ordenaLinha(matriz){
+    let aux;
+
+    for(let i = 0; i < matriz.length; i++){
+        for(let j = 0; j < matriz.length; j++){
+            for(let k = i + 1; k < matriz.length; k++){
+                if(matriz[i][j] > matriz[k][j]){
+                    aux = matriz[i][j];
+                    matriz[i][j] = matriz[k][j];
+                    matriz[k][j] = aux;
+                }
+            }
+        }
+    }
+
+    ordenaColuna(matriz);
+}
+
+const matriz = Array(3);
+
+matriz[0] = [58, 7];
 matriz[1] = [2, 1];
+matriz[2] = [-1, 6];
 
-console.log(ordena(matriz));
+const matrizOrdenada = ordenaLinha(matriz);
+
+mostraMat(matriz);
