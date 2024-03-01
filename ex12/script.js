@@ -1,4 +1,4 @@
-// Escreva um programa que receba um array de números e retorne a soma de todos os números usando um loop for of
+// Escreva um programa que receba um array de números e retorne a soma de todos os números usando um loop for of.
 
 function somaArray(numeros){
 
